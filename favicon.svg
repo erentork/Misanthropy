@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" shape-rendering="crispEdges">
+<!--
+  Misanthropy's mark: a hex nut, drawn pixel by pixel at 16x16.
+
+  The nut is the robot's own hardware -- the thing that drops on the floor
+  when something comes apart -- and it is the shape the game's four ending
+  emblems are stamped into. This one is left blank on purpose: the site's mark
+  is the nut before anything has been stamped into it.
+
+  Edit here, in the same notation as src/logos.js and src/pixelfont.js, then
+  regenerate the rects below. '#' is ink, '.' is paper.
+
+    ................
+    .....######.....
+    ....########....
+    ...##########...
+    ..############..
+    .####......####.
+    .###........###.
+    .###........###.
+    .###........###.
+    .###........###.
+    .####......####.
+    ..############..
+    ...##########...
+    ....########....
+    .....######.....
+    ................
+-->
+  <rect width="16" height="16" fill="#f7f7f7"/>
+  <g fill="#2f2f2f">
+  <rect x="5" y="1" width="6" height="1"/>
+  <rect x="4" y="2" width="8" height="1"/>
+  <rect x="3" y="3" width="10" height="1"/>
+  <rect x="2" y="4" width="12" height="1"/>
+  <rect x="1" y="5" width="4" height="1"/>
+  <rect x="11" y="5" width="4" height="1"/>
+  <rect x="1" y="6" width="3" height="1"/>
+  <rect x="12" y="6" width="3" height="1"/>
+  <rect x="1" y="7" width="3" height="1"/>
+  <rect x="12" y="7" width="3" height="1"/>
+  <rect x="1" y="8" width="3" height="1"/>
+  <rect x="12" y="8" width="3" height="1"/>
+  <rect x="1" y="9" width="3" height="1"/>
+  <rect x="12" y="9" width="3" height="1"/>
+  <rect x="1" y="10" width="4" height="1"/>
+  <rect x="11" y="10" width="4" height="1"/>
+  <rect x="2" y="11" width="12" height="1"/>
+  <rect x="3" y="12" width="10" height="1"/>
+  <rect x="4" y="13" width="8" height="1"/>
+  <rect x="5" y="14" width="6" height="1"/>
+  </g>
+</svg>
