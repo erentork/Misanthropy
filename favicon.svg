@@ -1,53 +1,61 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" shape-rendering="crispEdges">
 <!--
-  Misanthropy's mark: a hex nut, drawn pixel by pixel at 16x16.
-
-  The nut is the robot's own hardware -- the thing that drops on the floor
-  when something comes apart -- and it is the shape the game's four ending
-  emblems are stamped into. This one is left blank on purpose: the site's mark
-  is the nut before anything has been stamped into it.
-
-  Edit here, in the same notation as src/logos.js and src/pixelfont.js, then
-  regenerate the rects below. '#' is ink, '.' is paper.
+  Misanthropy's mark: the robot, switched off. Drawn pixel by pixel at 16x16
+  in the same notation as src/logos.js and src/pixelfont.js -- '#' is the head,
+  '.' is a hole. Edit here, then regenerate the rects below.
 
     ................
-    .....######.....
-    ....########....
-    ...##########...
-    ..############..
-    .####......####.
-    .###........###.
-    .###........###.
-    .###........###.
-    .###........###.
-    .####......####.
-    ..############..
-    ...##########...
-    ....########....
-    .....######.....
     ................
+    ..############..
+    .##############.
+    .##############.
+    .##.#.####.#.##.
+    .###.######.###.
+    .##.#.####.#.##.
+    .##############.
+    .##############.
+    .##..######..##.
+    .##############.
+    ..############..
+    ...##########...
+    ................
+    ................
+
+  There is no background. The eyes and the mouth are holes rather than paint,
+  so they show whatever the icon is sitting on and read correctly either way
+  round. The head itself cannot do that trick, so it follows the browser
+  theme: ink on a light tab strip, paper on a dark one. Browsers that will not
+  take an SVG icon fall back to the PNGs, which are one mid tone chosen to
+  hold about 3.5:1 against both.
 -->
-  <rect width="16" height="16" fill="#f7f7f7"/>
-  <g fill="#2f2f2f">
-  <rect x="5" y="1" width="6" height="1"/>
-  <rect x="4" y="2" width="8" height="1"/>
-  <rect x="3" y="3" width="10" height="1"/>
-  <rect x="2" y="4" width="12" height="1"/>
-  <rect x="1" y="5" width="4" height="1"/>
-  <rect x="11" y="5" width="4" height="1"/>
-  <rect x="1" y="6" width="3" height="1"/>
-  <rect x="12" y="6" width="3" height="1"/>
-  <rect x="1" y="7" width="3" height="1"/>
-  <rect x="12" y="7" width="3" height="1"/>
-  <rect x="1" y="8" width="3" height="1"/>
-  <rect x="12" y="8" width="3" height="1"/>
-  <rect x="1" y="9" width="3" height="1"/>
-  <rect x="12" y="9" width="3" height="1"/>
-  <rect x="1" y="10" width="4" height="1"/>
-  <rect x="11" y="10" width="4" height="1"/>
-  <rect x="2" y="11" width="12" height="1"/>
-  <rect x="3" y="12" width="10" height="1"/>
-  <rect x="4" y="13" width="8" height="1"/>
-  <rect x="5" y="14" width="6" height="1"/>
+  <style>
+    rect { fill: #2f2f2f; }
+    @media (prefers-color-scheme: dark) { rect { fill: #f2f2f2; } }
+  </style>
+  <g>
+    <rect x="2" y="2" width="12" height="1"/>
+    <rect x="1" y="3" width="14" height="1"/>
+    <rect x="1" y="4" width="14" height="1"/>
+    <rect x="1" y="5" width="2" height="1"/>
+    <rect x="4" y="5" width="1" height="1"/>
+    <rect x="6" y="5" width="4" height="1"/>
+    <rect x="11" y="5" width="1" height="1"/>
+    <rect x="13" y="5" width="2" height="1"/>
+    <rect x="1" y="6" width="3" height="1"/>
+    <rect x="5" y="6" width="6" height="1"/>
+    <rect x="12" y="6" width="3" height="1"/>
+    <rect x="1" y="7" width="2" height="1"/>
+    <rect x="4" y="7" width="1" height="1"/>
+    <rect x="6" y="7" width="4" height="1"/>
+    <rect x="11" y="7" width="1" height="1"/>
+    <rect x="13" y="7" width="2" height="1"/>
+    <rect x="1" y="8" width="14" height="1"/>
+    <rect x="1" y="9" width="14" height="1"/>
+    <rect x="1" y="10" width="2" height="1"/>
+    <rect x="5" y="10" width="6" height="1"/>
+    <rect x="13" y="10" width="2" height="1"/>
+    <rect x="1" y="11" width="14" height="1"/>
+    <rect x="2" y="12" width="12" height="1"/>
+    <rect x="3" y="13" width="10" height="1"/>
   </g>
 </svg>
