@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Misanthropy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="view"></canvas>
+
+<div id="palette"><span class="label" data-i18n="palette.title"></span></div>
+<div id="lang"></div>
+<div id="menu" hidden></div>
+
+<div id="welcome">
+  <div id="welcome-card">
+    <div id="welcome-title" data-i18n="welcome.title"></div>
+    <p id="welcome-body" data-i18n="welcome.body"></p>
+    <div id="welcome-field">
+      <label for="welcome-name" data-i18n="welcome.name"></label>
+      <input id="welcome-name" type="text" maxlength="40" autocomplete="off" spellcheck="false">
+    </div>
+    <button id="welcome-begin" data-i18n="welcome.begin" disabled></button>
+  </div>
+</div>
+
+<div id="pulse" hidden></div>
+
+<div id="notice" hidden>
+  <div id="notice-head">
+    <span id="notice-label" data-i18n="notice.label"></span>
+    <button id="notice-close" type="button">&#215;</button>
+  </div>
+  <p id="notice-body" data-i18n="notice.body"></p>
+</div>
+
+<div id="observer" hidden>
+  <canvas id="observer-logo" hidden></canvas>
+  <p id="observer-line"></p>
+  <div id="observer-report"></div>
+  <div id="observer-final" hidden>
+    <div id="final-record">
+      <div id="final-record-title"></div>
+      <div id="final-record-lines"></div>
+    </div>
+    <div id="final-verdict">
+      <div id="final-group"></div>
+      <div id="final-analysis"></div>
+    </div>
+  </div>
+  <div id="final-last" hidden></div>
+  <div id="observer-choices" hidden></div>
+</div>
+
+<div id="hints">
+  <span data-i18n="hint.drag"></span>
+  <span data-i18n="hint.rightclick"></span>
+  <span data-i18n="hint.wheel"></span>
+  <span data-i18n="hint.fire"></span>
+  <span><span data-i18n="hint.armour"></span> <b id="armour">3</b></span>
+  <span><span data-i18n="hint.kills"></span> <b id="kills">0</b></span>
+  <span data-i18n="hint.reset"></span>
+  <span data-i18n="hint.restart"></span>
+  <span data-i18n="hint.gravity"></span>
+  <span data-i18n="hint.skeleton"></span>
+  <span><span data-i18n="hint.build"></span> <b id="style-name">normal</b></span>
+  <span data-i18n="hint.pause"></span>
+  <span><span data-i18n="hint.mute"></span> <b id="sound-state">açık</b></span>
+</div>
+
+<!-- Plain scripts, not modules, so opening the file directly works. Load
+     order matters: raster -> physics -> robot/items/fx -> chrome -> main -->
+<script src="src/raster.js"></script>
+<script src="src/physics.js"></script>
+<script src="src/robot.js"></script>
+<script src="src/items.js"></script>
+<script src="src/pixelfont.js"></script>
+<script src="src/fx.js"></script>
+<script src="src/audio.js"></script>
+<script src="src/behaviour.js"></script>
+<script src="src/plea.js"></script>
+<script src="src/render.js"></script>
+<script src="src/i18n.js"></script>
+<script src="src/logos.js"></script>
+<script src="src/ledger.js"></script>
+<script src="src/survey.js"></script>
+<script src="src/observer.js"></script>
+<script src="src/welcome.js"></script>
+<script src="src/notice.js"></script>
+<script src="src/input.js"></script>
+<script src="src/ui.js"></script>
+<script src="src/main.js"></script>
+</body>
+</html>
